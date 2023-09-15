@@ -1,0 +1,63 @@
+/* Apply styles to the table container */
+/* Apply styles to the table container */
+div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #f4f4f4; /* Background color for the container */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Style the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff; /* Background color for the table */
+    font-family: Arial, sans-serif; /* Choose a font family */
+  }
+  
+  /* Style table header cells */
+  th {
+    background-color: #4285f4; /* Header background color */
+    color: #fff; /* Header font color */
+    text-align: center; /* Center the content in header cells */
+    padding: 15px;
+    font-weight: bold;
+  }
+  
+  /* Style table data cells */
+  td {
+    padding: 10px;
+    text-align: center; /* Center the content in data cells */
+    font-size: 14px;
+    color: #333; /* Font color for data cells */
+  }
+  
+  /* Style alternating rows with background color */
+  tr:nth-child(even) {
+    background-color: #f2f2f2; /* Background color for even rows */
+  }
+  
+  /* Hover effect on rows */
+  tr:hover {
+    background-color: #e0e0e0; /* Background color on hover */
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+/* Style the strong tag within h1 */
+strong {
+    color: #4285f4;
+}
