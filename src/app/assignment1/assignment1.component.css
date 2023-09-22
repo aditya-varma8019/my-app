@@ -1,63 +1,108 @@
-/* Apply styles to the table container */
-/* Apply styles to the table container */
-div {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    background-color: #f4f4f4; /* Background color for the container */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  /* Style the table */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 10px;
-    background-color: #fff; /* Background color for the table */
-    font-family: Arial, sans-serif; /* Choose a font family */
-  }
-  
-  /* Style table header cells */
-  th {
-    background-color: #4285f4; /* Header background color */
-    color: #fff; /* Header font color */
-    text-align: center; /* Center the content in header cells */
-    padding: 15px;
-    font-weight: bold;
-  }
-  
-  /* Style table data cells */
-  td {
-    padding: 10px;
-    text-align: center; /* Center the content in data cells */
-    font-size: 14px;
-    color: #333; /* Font color for data cells */
-  }
-  
-  /* Style alternating rows with background color */
-  tr:nth-child(even) {
-    background-color: #f2f2f2; /* Background color for even rows */
-  }
-  
-  /* Hover effect on rows */
-  tr:hover {
-    background-color: #e0e0e0; /* Background color on hover */
-  }
 
-  h1 {
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-radius: 5px;
+/* Center the entire content */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This centers content vertically on the page */
+  margin: 0;
+  background-color: #f0f0f0; /* Optional background color */
 }
 
-/* Style the strong tag within h1 */
-strong {
-    color: #4285f4;
+/* Style for the question list */
+
+
+/* Style for each question item */
+.question {
+  text-align: center; /* Center-align the questions and answers */
+  margin-bottom: 20px; /* Add some spacing between questions */
+  background-color: #fff; /* Optional background color for each question */
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Style for the button */
+button {
+  margin-top: 10px; /* Add some spacing below each answer */
+  cursor: pointer;
+  background-color: #007bff; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #444;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* .question {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+  width: 100%;
+  text-align: center;
+} */
+
+.question:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.img-container {
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img-container img {
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+

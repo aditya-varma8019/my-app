@@ -1,23 +1,31 @@
+<h1><strong>R V Aditya Varma</strong></h1>
+<h1><strong>BT21CSE120</strong></h1>
 <h1><strong>rvenkataditya@gmail.com</strong></h1>
-<body>
-    <div>
-        <table>
-          <thead>
-            <th>Question No.</th>
-            <th> Question</th>
-            <th>Answer</th>
-          </thead>
-          <tbody>
-            <tr *ngFor="let c of arr;let i =index">
-              <td>{{i+1}}</td>
-              <td>{{c.Question}}</td>
-              <td>{{c.Answer}}</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+<h1>Assignment 1</h1>
+<div>
+  <!-- <table>
+    <thead>
+      <th>Question No.</th>
+      <th>Question</th>
+      <th>Answer</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of arr; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ c.Question }}</td>
+        <td>{{ c.Answer }}</td>
+      </tr>
+    </tbody>
+  </table> -->
+    <ul>
+        <li *ngFor="let item of assignment" class="question">
+            <h3>{{ item.question }}</h3>
+            <div *ngIf="item.show">
+                <div class="img-container" [innerHTML]="item.answer"></div>
+            </div>
+            <button (click)="toggleDisplay(item)">{{ item.buttonname }}</button>
+        </li>
+    </ul>
 
-      
-</body>
 
-
+</div>
