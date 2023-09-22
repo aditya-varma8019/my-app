@@ -12,7 +12,9 @@ import { ServicesComponent } from './services/services.component';
   var routes:Routes = [
     {path: "home", component: HomeComponent},
     { path: "aboutus", component: AboutusComponent},
-    {path: "services", component: ServicesComponent}
+    {path: "services", component: ServicesComponent},
+    {path: '', redirectTo: 'home', pathMatch: 'full'},
+    {path:'test2', loadChildren:() => import('./test2/test2.module').then(m => m.Test2Module)}
   ];
 
 @NgModule({
@@ -29,4 +31,4 @@ import { ServicesComponent } from './services/services.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

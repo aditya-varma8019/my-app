@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(private router:Router) {
+
+  }
+
   myField = ""
   title = 'my-first-angular'
   name = 'Aditya'
@@ -43,7 +49,9 @@ showArray = true;
   displayFlowers() {
     this.showFlowers = !this.showFlowers;
   }
-
+  gotoTest2() {
+    this.router.navigate(['/test2']);
+  }
   countries = [
     {"id" : 1, "name" : "India", "numberOfStates" : 29, "flag" : ""},
     {"id" : 2, "name" : "USA", "numberOfStates" : 50, "flag" : ""},
