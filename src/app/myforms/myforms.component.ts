@@ -15,11 +15,6 @@ export class MyformsComponent {
     password: new FormControl('',[Validators.required, Validators.minLength(4)]),
   })
 
-  constructor() {}
-
-  ngOnInit():void {
-
-  }
 
   save() {
     console.log(this.myform.value);
