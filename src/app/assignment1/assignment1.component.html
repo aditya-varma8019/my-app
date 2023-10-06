@@ -1,31 +1,10 @@
-<h1><strong>R V Aditya Varma</strong></h1>
-<h1><strong>BT21CSE120</strong></h1>
-<h1><strong>rvenkataditya@gmail.com</strong></h1>
-<h1>Assignment 1</h1>
-<div>
-  <!-- <table>
-    <thead>
-      <th>Question No.</th>
-      <th>Question</th>
-      <th>Answer</th>
-    </thead>
-    <tbody>
-      <tr *ngFor="let c of arr; let i = index">
-        <td>{{ i + 1 }}</td>
-        <td>{{ c.Question }}</td>
-        <td>{{ c.Answer }}</td>
-      </tr>
-    </tbody>
-  </table> -->
-    <ul>
-        <li *ngFor="let item of assignment" class="question">
-            <h3>{{ item.question }}</h3>
-            <div *ngIf="item.show">
-                <div class="img-container" [innerHTML]="item.answer"></div>
-            </div>
-            <button (click)="toggleDisplay(item)">{{ item.buttonname }}</button>
-        </li>
-    </ul>
-
-
+<h1 class="center-text"><strong>rvenkataditya@gmail.com</strong></h1>
+<h1 class="center-text"><strong>BT21CSE120</strong></h1>
+<h1 class="center-text">Assignment 1</h1>
+<div class="center-content">
+  <div *ngFor="let question of assignment" class="question-box">
+    <h3>{{ question.question }}</h3>
+    <button (click)="toggleDisplay(question)">{{ question.buttonname }}</button>
+    <div *ngIf="question.show" [innerHTML]="question.answer"></div>
+  </div>
 </div>
