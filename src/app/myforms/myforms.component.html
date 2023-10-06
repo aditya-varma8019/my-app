@@ -1,0 +1,28 @@
+<div>
+    <form [formGroup]="myform">
+        <div>
+            <label>name</label>
+            <input type="text" formControlName="name">
+        </div>
+        <p *ngIf="(myform.controls['name'].touched || myform.controls['name'].dirty) &&  myform.controls['name'].invalid" class="myerror">Name is invalid and compulsary. You should enter atleast 5 characters</p>
+        <div>
+            <label>mobile</label>
+            <input type="text" formControlName="mobile">
+        </div>
+        <p *ngIf="(myform.controls['mobile'].touched || myform.controls['mobile'].dirty) &&  myform.controls['mobile'].invalid" class="myerror">Name is invalid and compulsary. You should enter atleast 5 characters</p>
+        <div>
+            <label>email</label>
+            <input type="email" formControlName="email">
+        </div>
+        <p *ngIf="(myform.controls['email'].touched || myform.controls['email'].dirty) &&  myform.controls['email'].invalid" class="myerror">Name is invalid and compulsary. You should enter atleast 5 characters</p>
+        <div>
+            <label>password</label>
+            <input type="password" formControlName="password">
+        </div>
+        <p *ngIf="(myform.controls['password'].touched || myform.controls['password'].dirty) &&  myform.controls['password'].invalid" class="myerror">Name is invalid and compulsary. You should enter atleast 5 characters</p>
+        <div>
+            <button [disabled]="myform.invalid" (click)="save()">Submit</button>
+            <button (click)="reset()">Reset</button>
+        </div>
+    </form>
+</div>

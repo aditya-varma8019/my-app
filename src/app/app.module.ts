@@ -14,7 +14,8 @@ import { ServicesComponent } from './services/services.component';
     { path: "aboutus", component: AboutusComponent},
     {path: "services", component: ServicesComponent},
     {path: '', redirectTo: 'home', pathMatch: 'full'},
-    {path:'test2', loadChildren:() => import('./test2/test2.module').then(m => m.Test2Module)}
+    {path:'test2', loadChildren:() => import('./test2/test2.module').then(m => m.Test2Module)},
+    {path:'test3', loadChildren:() => import('./test3/test3.module').then(m => m.Test3Module)}
   ];
 
 @NgModule({

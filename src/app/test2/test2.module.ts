@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 var routes:Routes = [
   {path:'home2', component:Home2Component},
   {path:'about2', component:About2Component},
-  {path:'', redirectTo:'home2',pathMatch:'full'}
+  {path:'', redirectTo:'home2', pathMatch:'full'}
 ]
 
 @NgModule({
