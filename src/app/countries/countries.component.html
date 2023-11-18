@@ -1,0 +1,5 @@
+<input type="button" value="" name="Find" (click)="findCountries" /> 
+<div *ngFor="let c of displayCountries;" style="grid-area: 100px;">
+    <img src={{c.flags.png}}  />
+    <h1>{{c.name.official}}</h1>
+</div>
