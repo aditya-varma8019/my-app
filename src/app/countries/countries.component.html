@@ -1,4 +1,8 @@
-<input type="button" value="" name="Find" (click)="findCountries" /> 
+<!-- <input type="button" value="" name="Find" (click)="findCountries" />  -->
+<div>
+    <input type="text" [(ngModel)]="searchCountry" placeholder="Enter country name">
+    <input type="button" value="Find" (click)="findCountries()" /> 
+</div>
 <div *ngFor="let c of displayCountries;" style="grid-area: 100px;">
     <img src={{c.flags.png}}  />
     <h1>{{c.name.official}}</h1>

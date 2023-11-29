@@ -1,1 +1,46 @@
-<p>q2 works!</p>
+<style>
+    .question {
+        text-align: left;
+        font-size: 20px; /* Updated font size */
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-family: "Times New Roman", serif; /* Updated font family */
+    }
+
+    .answer {
+        text-align: left;
+        font-size: 20px; /* Updated font size */
+        margin-bottom: 40px;
+        width: 75%;
+        font-family: "Times New Roman", serif; /* Updated font family */
+    }
+</style>
+
+<div class="question">
+    2. What are http and https protocols? Explain in detail the following http methods. a.GET b.POST c.PUT d.DELETE
+</div>
+<div class="answer">
+    HTTP and HTTPS Protocols HTTP (Hypertext Transfer Protocol) HTTP is the foundation of data communication on the World Wide Web. It is an application layer protocol that allows for the transfer of data between a client (usually a web browser) and a server. HTTP is a text-based protocol, which means that the messages exchanged between the client and server are human-readable.Key features of HTTP.
+1) Stateless: Each HTTP request from a client to a server is independent and does not retain any previous state information.
+2) Connectionless: HTTP does not maintain a persistent connection between the client and server. After each request/response cycle, the connection is closed.
+3) Simple: HTTP messages consist of a request line (in the case of the client) or a status line (in the case of the server), headers, and an optional body. HTTPS (Hypertext Transfer Protocol Secure)
+HTTPS is a secure version of HTTP. It adds a layer of security by encrypting the data transmitted between the client and server, making it difficult for third parties to intercept and read the data. HTTPS uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) to establish a secure encrypted connection.HTTPS is a secure version of HTTP.
+1) Encryption: HTTPS uses cryptographic protocols to encrypt the data, ensuring confidentiality.
+2) Data Integrity: It also ensures that the data has not been tampered with during transmission.
+3) Authentication: HTTPS provides authentication, confirming that the server the client is connecting to is indeed the server it claims to be.
+4) Trust: HTTPS relies on digital certificates issued by trusted Certificate Authorities (CAs) to establish trust in the identity of the server.
+Common HTTP Methods
+GET Purpose: Used to retrieve data from a specified resource. Characteristics Idempotent: Repeated GET requests to the same resource will not have any side effects. They only retrieve data. Safe: GET requests should not modify the server's state.
+Example: Fetching a web page, an image, or data from an API by including parameters in the URL.
+POST Purpose: Used to send data to the server to create a new resource or perform some operation that may change the server's state.
+Characteristics Non-idempotent: Repeated POST requests to the same resource can have different effects. Not necessarily safe: POST requests can result in server-side changes.
+Example: Submitting a form, uploading a file, or sending data to create a new user account.
+PUT - Purpose: Used to update or replace an existing resource or create a new resource if it doesn't exist.
+Characteristics - Idempotent: Repeated PUT requests to the same resource with the same data should have the same result. Typically used to update an entire resource, so it may require sending all data for the resource.
+Example: Updating a user's profile information with a complete set of data.
+DELETE - Purpose: Used to request the removal of a resource from the server.
+Characteristics - Idempotent: Repeated DELETE requests to the same resource will not have any side effects. Typically removes the specified resource from the server.
+Example: Deleting a user account or removing a file from a server.
+These HTTP methods are essential for client-server communication in web applications and are used to perform various operations such as retrieving data, creating, updating, and deleting resources on the server. Understanding their characteristics is crucial for designing and implementing web services and APIs effectively
+</div>

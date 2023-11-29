@@ -1,5 +1,13 @@
+<!-- <style>
+  div:hover button {
+    display: block;
+  }
+  
+  button {
+    display: none;
+  }
+</style> -->
 
-<!-- <app-home></app-home> -->
 <!-- <app-assignment1></app-assignment1> -->
 <!-- <app-countries></app-countries> -->
 
@@ -64,24 +72,42 @@
   <h2>{{myField}}</h2>
 </div> -->
 
-<button routerLink="/home">Home</button>
-<button routerLink="/aboutus">AboutUs</button>
-<button routerLink="/services">Services</button>
-<button routerLink="/test2/home2">Test2/Home2</button> 
-<!-- <button routerLink="/test2/aboutus2">Test2/AboutUs2</button>
-<button routerLink="/test2/services2">Test2/Services2</button>
-<button routerLink="/test2">Test2</button>
-<button routerLink="/test3">Test3</button>
-<button routerLink="/test4">Test4</button>
-<button routerLink="/test5">Test5</button>   -->
-<button routerLink="/countries">Countries</button>
+<div class="navbar">
+  <button routerLink="/home">Home</button>
+  <button routerLink="/assignment1">Assignment 1</button>
+  <div class="dropdown" >
+    <button class="dropbtn">Assignment 2-1</button>
+    <div class="dropdown-content">
+      <button routerLink="/assignment1/q1">Question 1</button>
+      <button routerLink="/assignment1/q2">Question 2</button>
+      <button routerLink="/assignment1/q3">Question 3</button>
+      <button routerLink="/assignment1/q4">Question 4</button>
+      <button routerLink="/assignment1/q5">Question 5</button>
+      <button routerLink="/assignment1/q6">Question 6</button>
+      <button routerLink="/assignment1/q7">Question 7</button>
+      <button routerLink="/assignment1/q8">Question 8</button>
+      <button routerLink="/assignment1/q9">Question 9</button>
+    </div>
+  </div>
+  <div class="dropdown" >
+    <button class="dropbtn">Assignment 2-2</button>
+    <div class="dropdown-content">
+      <button routerLink="/login">Login</button>
+      <button routerLink="/signup">SignUp</button>
+      
+    </div>
+  </div>
+  <button routerLink="/countries">Countries</button>
+</div>
 <router-outlet></router-outlet>
 
-<h1>S2P EduTech</h1> 
+<!-- <app-home></app-home> -->
+
+<!-- <h1>S2P EduTech</h1>  -->
 <!-- <div class="img"> <img src="../assets/image1.jpeg" alt="luffy Gear 5" > </div> -->
 
-  <li>
+  <!-- <li>
     routing navigation in angular
-  </li>
+  </li> -->
 
   

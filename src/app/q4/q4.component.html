@@ -1,1 +1,68 @@
-<p>q4 works!</p>
+<style>
+    .question {
+        text-align: left;
+        font-size: 20px; /* Updated font size */
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-family: "Times New Roman", serif; /* Updated font family */
+    }
+
+    .answer {
+        text-align: left;
+        font-size: 20px; /* Updated font size */
+        margin-bottom: 40px;
+        width: 75%;
+        font-family: "Times New Roman", serif; /* Updated font family */
+    }
+</style>
+
+<div class="question">
+    4. What are different array methods in javascript? Explain with examples
+</div>
+<div class="answer">
+    <div style="font-family:Arial, Helvetica, sans-serif;">
+        <pre>
+        1)<strong>push()</strong> - Adds one or more elements to the end of an array. Modifies the original array and returns its new length.
+         Example: const fruits = ['apple', 'banana'];
+          fruits.push('orange', 'grape'); // ['apple', 'banana', 'orange', 'grape'] 
+
+        2)<strong>pop()</strong> - Removes the last element from an array. Modifies the original array and returns the removed element.
+          Example: const fruits = ['apple', 'banana', 'orange'];
+          const removedFruit = fruits.pop(); // 'orange' 
+
+        3)<strong>unshift()</strong> - Adds one or more elements to the beginning of an array. Modifies the original array and returns its new length.
+          Example: const fruits = ['banana', 'orange'];
+          fruits.unshift('apple', 'grape'); // ['apple', 'grape', 'banana', 'orange'] 
+
+        4)<strong>shift()</strong> - Removes the first element from an array. Modifies the original array and returns the removed element.
+          Example: const fruits = ['apple', 'banana', 'orange'];
+          const removedFruit = fruits.shift(); // 'apple'
+
+        5)<strong>concat()</strong> - Combines two or more arrays and returns a new array.
+          Example: const fruits1 = ['apple', 'banana']; 
+          const fruits2 = ['orange', 'grape'];
+          const combinedFruits = fruits1.concat(fruits2); // ['apple', 'banana', 'orange', 'grape'] 
+
+        6)<strong>splice()</strong> - Adds or removes elements from an array at a specified index. Modifies the original array and returns an array of removed elements.
+          Example: const fruits = ['apple', 'banana', 'orange'];
+          const removed = fruits.splice(1, 1, 'grape', 'kiwi'); // ['banana']
+
+        7)<strong>slice()</strong> - Returns a shallow copy of a portion of an array into a new array.
+          Example: const numbers = [1, 2, 3, 4, 5]; 
+          const slicedNumbers = numbers.slice(1, 4); // [2, 3, 4] 
+
+        8)<strong>forEach()</strong> - Calls a function once for each element in an array.
+          Example: const numbers = [1, 2, 3];
+          numbers.forEach((number) => console.log(number)); // 1, 2, 3 
+
+        9)<strong>map()</strong> - Creates a new array by applying a function to each element in an existing array.
+          Example: const numbers = [1, 2, 3];
+          const doubled = numbers.map((number) => number * 2); // [2, 4, 6] 
+
+        10)<strong>filter()</strong> - Creates a new array with all elements that pass a test specified by a function.
+          Example: const numbers = [1, 2, 3, 4, 5]; 
+          const evens = numbers.filter((number) => number % 2 === 0); // [2, 4]
+        </pre>
+        </div>
+</div>

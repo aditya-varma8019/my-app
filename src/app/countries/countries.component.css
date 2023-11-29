@@ -1,0 +1,43 @@
+/* Apply general styling to the container div */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  /* Style the text input */
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Style the "Find" button */
+  input[type="button"] {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
+  /* Adjust styling for the displayed countries */
+  div * {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  /* Style the country image */
+  img {
+    max-width: 100px;
+    max-height: 60px;
+  }
+  
+  /* Style the country name */
+  h1 {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #333;
+  }
+  

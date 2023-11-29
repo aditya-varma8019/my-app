@@ -1,1 +1,40 @@
-<p>q5 works!</p>
+<style>
+    .question {
+        text-align: left;
+        font-size: 20px; /* Updated font size */
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        font-family: "Times New Roman", serif; /* Updated font family */
+    }
+
+    .answer {
+        text-align: left;
+        font-size: 20px; /* Updated font size */
+        margin-bottom: 40px;
+        width: 75%;
+        font-family: "Times New Roman", serif; /* Updated font family */
+    }
+</style>
+
+<div class="question">
+    5. What is difference between let, and const in javascript?
+</div>
+<div class="answer">
+    In JavaScript, let, var, and const are used to declare variables, but they have some key differences in terms of scope, hoisting, and mutability:<br><br>
+        
+        <strong>1) var:</strong> Variables declared with var are function-scoped or globally scoped, but not block-scoped. They are hoisted, which means they are moved to the top of their containing function 
+        or global scope during compilation. var variables can be re-declared within the same scope, and they can also be updated. They are not affected by block boundaries
+         (e.g., if statements or loops).
+         
+         <br><br><strong>2) let: </strong>Variables declared with let are block-scoped, which means their scope is limited to the block (e.g., if statement or loop)
+          in which they are defined. They are also hoisted, but unlike var, they are not initialized until the line of code where they are declared is executed. let variables
+           can be updated within their scope, but they cannot be re-declared in the same scope.
+           
+           <br><br><strong>3) const: </strong>Variables declared with const are block-scoped, just like let. However,
+            const variables cannot be reassigned after they are initially assigned a value. They are also hoisted but, like let, they are not initialized until the line of code 
+            where they are declared is executed.In general, it's recommended to use const by default for variables that don't need to be reassigned, as it helps prevent
+             unintentional variable mutation. Use let for variables that need to be reassigned, and minimize the use of var because of its behavior related to hoisting and lack
+              of block scope, which can lead to unexpected results and bugs in larger codebases.
+        
+</div>
